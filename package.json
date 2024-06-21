@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "maptalks": "1.0.0-rc.33",
     "vue": "^3.4.21"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "prettier": "^3.3.2",
     "vite": "^5.2.0"
   }
 }

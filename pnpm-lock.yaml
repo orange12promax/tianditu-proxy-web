@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      maptalks:
+        specifier: 1.0.0-rc.33
+        version: 1.0.0-rc.33
       vue:
         specifier: ^3.4.21
         version: 3.4.29
@@ -15,6 +18,9 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
         version: 5.0.5(vite@5.3.1)(vue@3.4.29)
+      prettier:
+        specifier: ^3.3.2
+        version: 3.3.2
       vite:
         specifier: ^5.2.0
         version: 5.3.1
@@ -179,6 +185,12 @@ packages:
   '@jridgewell/sourcemap-codec@1.4.15':
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
+  '@maptalks/feature-filter@1.3.0':
+    resolution: {integrity: sha512-O6GcFzPuCbz6bO4TNBnmP8VunS0GexTzZ4m36A4HbYQICY1cplpFgntX2fyB/TY3cZrFRGoeMePBeMZFMOOhcQ==}
+
+  '@maptalks/function-type@1.3.1':
+    resolution: {integrity: sha512-VoKE84IDhAn1Co25IVggptNzZdQ3fPUCRlw8+SBxyW8ATT45kFDqYECktqnNW445h44tT+3Ge5fyP+dHVCDP6g==}
+
   '@rollup/rollup-android-arm-eabi@4.18.0':
     resolution: {integrity: sha512-Tya6xypR10giZV1XzxmH5wr25VcZSncG0pZIjfePT0OVBvqNEurzValetGNarVrGiq66EBVAFn15iYX4w6FKgQ==}
     cpu: [arm]
@@ -298,6 +310,9 @@ packages:
   '@vue/shared@3.4.29':
     resolution: {integrity: sha512-hQ2gAQcBO/CDpC82DCrinJNgOHI2v+FA7BDW4lMSPeBpQ7sRe2OLHWe5cph1s7D8DUQAwRt18dBDfJJ220APEA==}
 
+  colorin@0.2.0:
+    resolution: {integrity: sha512-sdsDdBwR1PF5fMABS1p7tyy0LRk4mAkw4BUI+zjXlmhQ9nQnjnHOOe9e099F4FxfJl0DHCbvgabR2w4/zTajyw==}
+
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
@@ -313,6 +328,9 @@ packages:
   estree-walker@2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
 
+  frustum-intersects@0.1.0:
+    resolution: {integrity: sha512-W0S6dmX5LJLtamimyuKhvbkpDTm5eVfMgk4X9yXNyWQ1zZ/cMm0PZoeX9Pm0tL302l+erQVrdfRGhV3ILfeTeQ==}
+
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -320,6 +338,9 @@ packages:
 
   magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
+
+  maptalks@1.0.0-rc.33:
+    resolution: {integrity: sha512-ivIZMlN3DQ5dh5ZUpq8QmKNHvg29W05p8D/pcVnRdldvYBvO0FAyU6bBHc1Yqj/Eofuj2pYhBthFQwkyYaiHlA==}
 
   nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
@@ -333,10 +354,24 @@ packages:
     resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
     engines: {node: ^10 || ^12 || >=14}
 
+  prettier@3.3.2:
+    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+  quickselect@1.1.1:
+    resolution: {integrity: sha512-qN0Gqdw4c4KGPsBOQafj6yj/PA6c/L63f6CaZ/DCF/xF4Esu3jVmKLUDYxghFx8Kb/O7y9tI7x2RjTSXwdK1iQ==}
+
+  rbush@2.0.2:
+    resolution: {integrity: sha512-XBOuALcTm+O/H8G90b6pzu6nX6v2zCKiFG4BJho8a+bY6AER6t8uQUZdi5bomQc0AprCWhEGa7ncAbbRap0bRA==}
+
   rollup@4.18.0:
     resolution: {integrity: sha512-QmJz14PX3rzbJCN1SG4Xe/bAAX2a6NpCP8ab2vfu2GiUr8AQcr2nCV/oEO3yneFarB67zk8ShlIyWb2LGTb3Sg==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
+
+  simplify-js@1.2.4:
+    resolution: {integrity: sha512-vITfSlwt7h/oyrU42R83mtzFpwYk3+mkH9bOHqq/Qw6n8rtR7aE3NZQ5fbcyCUVVmuMJR6ynsAhOfK2qoah8Jg==}
 
   source-map-js@1.2.0:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
@@ -381,6 +416,9 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  zousan@2.5.1:
+    resolution: {integrity: sha512-ZER+1EJNPHs9G3I6kTqhTmeqPjdU8XoaSIFzaUcSWmxcZBeXMuf5LM6Ih8LLNlQ46wg2Au+3ayn7KgjklVnOfA==}
 
 snapshots:
 
@@ -468,6 +506,12 @@ snapshots:
     optional: true
 
   '@jridgewell/sourcemap-codec@1.4.15': {}
+
+  '@maptalks/feature-filter@1.3.0': {}
+
+  '@maptalks/function-type@1.3.1':
+    dependencies:
+      colorin: 0.2.0
 
   '@rollup/rollup-android-arm-eabi@4.18.0':
     optional: true
@@ -578,6 +622,8 @@ snapshots:
 
   '@vue/shared@3.4.29': {}
 
+  colorin@0.2.0: {}
+
   csstype@3.1.3: {}
 
   entities@4.5.0: {}
@@ -610,12 +656,23 @@ snapshots:
 
   estree-walker@2.0.2: {}
 
+  frustum-intersects@0.1.0: {}
+
   fsevents@2.3.3:
     optional: true
 
   magic-string@0.30.10:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
+
+  maptalks@1.0.0-rc.33:
+    dependencies:
+      '@maptalks/feature-filter': 1.3.0
+      '@maptalks/function-type': 1.3.1
+      frustum-intersects: 0.1.0
+      rbush: 2.0.2
+      simplify-js: 1.2.4
+      zousan: 2.5.1
 
   nanoid@3.3.7: {}
 
@@ -626,6 +683,14 @@ snapshots:
       nanoid: 3.3.7
       picocolors: 1.0.1
       source-map-js: 1.2.0
+
+  prettier@3.3.2: {}
+
+  quickselect@1.1.1: {}
+
+  rbush@2.0.2:
+    dependencies:
+      quickselect: 1.1.1
 
   rollup@4.18.0:
     dependencies:
@@ -649,6 +714,8 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.18.0
       fsevents: 2.3.3
 
+  simplify-js@1.2.4: {}
+
   source-map-js@1.2.0: {}
 
   to-fast-properties@2.0.0: {}
@@ -668,3 +735,5 @@ snapshots:
       '@vue/runtime-dom': 3.4.29
       '@vue/server-renderer': 3.4.29(vue@3.4.29)
       '@vue/shared': 3.4.29
+
+  zousan@2.5.1: {}
