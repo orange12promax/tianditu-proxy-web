@@ -1,5 +1,6 @@
 <template>
-  <div id="homemap" class="w-full h-full">
+  <div class="w-full h-full relative">
+    <div id="homemap" class="w-full h-full relative"></div>
     <slot></slot>
   </div>
 </template>

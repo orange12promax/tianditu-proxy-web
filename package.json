@@ -11,6 +11,7 @@
   "dependencies": {
     "@maptalks/vt": "^0.95.0",
     "maptalks": "1.0.0-rc.33",
+    "naive-ui": "^2.38.2",
     "qs": "^6.12.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.3"

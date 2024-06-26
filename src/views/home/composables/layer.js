@@ -24,7 +24,7 @@ export function useGeoserverLayer() {
       'transport',
       'water_a',
       'waterways'
-    ],
+    ].map((id) => ({ id, name: id })),
     visible: ['waterways']
   })
 
@@ -58,17 +58,8 @@ export function useGeoserverLayer() {
     })
   })
 
-  const layerController = computed({
-    get() {
-      return layers.all.map(() => ({
-        id: layerName,
-        visible: layers.visible.includes(layerName)
-      }))
-    }
-  })
-
   return {
     vectorTileLayers,
-    layerController
+    layers
   }
 }

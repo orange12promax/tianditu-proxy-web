@@ -1,6 +1,6 @@
 import { useMapLife } from './common'
 import { VectorTileLayer } from '@maptalks/vt'
-
+import { h, onBeforeUnmount } from 'vue'
 export default {
   name: 'VVectorTileLayer',
   props: {
@@ -12,9 +12,14 @@ export default {
   },
   setup(props) {
     const { onMapMounted } = useMapLife()
+    let tileLayer
     onMapMounted((map) => {
-      const tileLayer = new VectorTileLayer(props.id, props.options)
+      tileLayer = new VectorTileLayer(props.id, props.options)
       tileLayer.addTo(map)
+    })
+    onBeforeUnmount(() => {
+      // remove layer from map
+      tileLayer.remove()
     })
     return () => null
   }
