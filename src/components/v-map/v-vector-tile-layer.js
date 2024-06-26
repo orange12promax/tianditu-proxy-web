@@ -1,7 +1,6 @@
 import { useMapLife } from './common'
 import { VectorTileLayer } from '@maptalks/vt'
 
-console.log(VectorTileLayer)
 export default {
   name: 'VVectorTileLayer',
   props: {

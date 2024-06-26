@@ -13,7 +13,6 @@ export default {
   setup(props) {
     const { onMapMounted } = useMapLife()
     onMapMounted((map) => {
-      console.log('map mounted')
       const tileLayer = new TileLayer(props.id, props.options)
       tileLayer.addTo(map)
     })
